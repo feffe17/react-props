@@ -1,0 +1,49 @@
+:root {
+  --c-primary: #daa521;
+  --bg-primary: #e5e5e5;
+  --bg-secondary: #cccccc;
+  --bg-footer: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  text-align: center;
+}
+
+header {
+  padding: 1rem;
+}
+
+main {
+  margin-top: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+
+
+footer {
+  background-color: var(--bg-footer);
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+.credits {
+  color: white;
+}

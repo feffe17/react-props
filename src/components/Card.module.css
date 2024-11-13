@@ -1,0 +1,45 @@
+.card {
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.topSection {
+    width: 100%;
+    max-height: 400px;
+    background-color: var(--bg-secondary);
+    font-size: 4rem;
+    padding: 7rem 4rem;
+    border-radius: 25px 25px 0 0;
+}
+
+.botSection {
+    background-color: white;
+    padding: 1rem;
+    text-align: start;
+    border-radius: 0 0 25px 25px;
+
+    h5 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: var(--c-primary);
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: white;
+
+        &:hover {
+            background-color: var(--bg-secondary);
+            color: black;
+        }
+    }
+}
