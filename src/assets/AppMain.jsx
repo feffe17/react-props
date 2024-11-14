@@ -1,18 +1,24 @@
-import Card from "../components/Card"
+// src/assets/AppMain.jsx
+import Card from "../components/Card";
+import { posts } from "../components/post.js";
 
 export default function AppMain() {
-
+    const publishedPosts = posts.filter(post => post.published);
 
     return (
         <main>
             <div className="container">
-                <Card
-                    title="Titolo del post"
-                    description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam suscipit eius quidem, accusantium, corrupti nisi facilis quis libero molestias et veritatis asperiores saepe praesentium voluptates. Ex quidem laudantium ratione placeat!"
-                    buttonText="Leggi di più"
-                />
+                {publishedPosts.map(post => (
+                    <Card
+                        key={post.id}
+                        title={post.title}
+                        description={post.content}
+                        image={post.image || "https://placehold.co/600x400"}
+                        tags={post.tags}
+                        buttonText="Leggi di più"
+                    />
+                ))}
             </div>
         </main>
-    )
-
+    );
 }
